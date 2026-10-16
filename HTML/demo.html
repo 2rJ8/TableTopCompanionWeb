@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Table Top Companion — Showcase</title>
+
+    <link rel="stylesheet" href="../CSS/demo/showcase.css" />
+  </head>
+
+  <body class="theme-daylight">
+    <header class="showcase-header">
+      <div class="showcase-container">
+        <div class="showcase-nav">
+          <a class="showcase-brand" href="#">
+            <span class="showcase-brand__mark">T</span>
+            <span>Table Top Companion</span>
+          </a>
+
+          <nav class="showcase-nav__links nav" aria-label="Principal">
+            <a class="nav__link is-active" href="#componentes">Explorar</a>
+            <a class="nav__link" href="#formularios">Colecciones</a>
+            <a class="nav__link" href="#tarjetas">Mesas</a>
+            <a class="nav__link" href="#estados">Comunidad</a>
+          </nav>
+
+          <div class="cluster">
+            <button id="themeToggle" class="btn btn--secondary" type="button">
+              Tema
+            </button>
+            <button class="btn btn--primary" type="button">Crear mesa</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="showcase-section">
+        <div class="showcase-container showcase-hero">
+          <div class="showcase-hero__copy">
+            <div>
+              <p class="showcase-label">01 / Showcase</p>
+              <h1 class="font-display-cover">
+                Pequeñas cajas,<br />grandes decisiones.
+              </h1>
+            </div>
+
+            <p class="font-text-large showcase-lead">
+              Esta página carga los componentes de geometría, la paleta de
+              colores y la tipografía desde hojas CSS independientes.
+            </p>
+
+            <div class="cluster">
+              <button class="btn btn--primary" type="button">
+                Explorar juegos
+              </button>
+              <button class="btn btn--secondary" type="button">
+                Crear mesa
+              </button>
+              <button class="btn btn--outline" type="button">
+                Documentación
+              </button>
+            </div>
+
+            <div class="cluster">
+              <span class="badge badge--success">Éxito</span>
+              <span class="badge badge--warning">Aviso</span>
+              <span class="badge badge--error">Error</span>
+              <span class="badge badge--info">Información</span>
+            </div>
+          </div>
+
+          <article class="card showcase-hero-card">
+            <div class="showcase-hero-card__cover">ARCS</div>
+
+            <div class="showcase-hero-card__body">
+              <div class="card__header">
+                <div>
+                  <div class="font-note-base color-secondary">
+                    JUEGO DE LA SEMANA
+                  </div>
+                  <h2 class="font-display-section">Arcs: decisiones</h2>
+                </div>
+
+                <span class="badge badge--success">8,7 ★</span>
+              </div>
+
+              <p class="font-text-base">
+                Conflicto, negociación y giros narrativos en una galaxia
+                cambiante.
+              </p>
+
+              <div class="showcase-chips">
+                <button class="chip chip--active" type="button">
+                  Estrategia
+                </button>
+                <button class="chip" type="button">2–4 jugadores</button>
+                <button class="chip" type="button">60–120 min</button>
+              </div>
+            </div>
+
+            <div class="card__footer">
+              <button class="btn btn--primary" type="button">Ver juego</button>
+              <button class="btn btn--outline" type="button">Guardar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="showcase-section" id="componentes">
+        <div class="showcase-container">
+          <div class="showcase-intro">
+            <p class="showcase-label">02 / Componentes</p>
+            <h2 class="font-display-title">Botones, chips y tabs</h2>
+            <p class="font-text-base showcase-lead">
+              Componentes definidos por <code>from_factor.css</code> y
+              coloreados por <code>colors.css</code>.
+            </p>
+          </div>
+
+          <div class="showcase-grid showcase-grid--2">
+            <section class="showcase-panel">
+              <h3 class="font-display-section showcase-panel__title">
+                Botones
+              </h3>
+
+              <div class="cluster">
+                <button class="btn btn--primary">Principal</button>
+                <button class="btn btn--secondary">Secundario</button>
+                <button class="btn btn--outline">Outline</button>
+
+                <button class="btn btn--icon btn--outline" aria-label="Buscar">
+                  <span class="showcase-icon showcase-icon--m">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="11" cy="11" r="6"></circle>
+                      <path d="m16 16 5 5"></path>
+                    </svg>
+                  </span>
+                </button>
+
+                <button class="btn btn--primary" disabled>Disabled</button>
+              </div>
+            </section>
+
+            <section class="showcase-panel">
+              <h3 class="font-display-section showcase-panel__title">Chips</h3>
+
+              <div class="showcase-chips" id="chips">
+                <button class="chip chip--active" type="button">Todos</button>
+                <button class="chip" type="button">Estrategia</button>
+                <button class="chip" type="button">Familiar</button>
+                <button class="chip" type="button">Cooperativo</button>
+              </div>
+            </section>
+          </div>
+
+          <section class="showcase-panel">
+            <h3 class="font-display-section showcase-panel__title">Tabs</h3>
+
+            <div class="tabs" id="tabs">
+              <button class="tab is-active" type="button">Actividad</button>
+              <button class="tab" type="button">Opiniones</button>
+              <button class="tab" type="button">Colecciones</button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="showcase-section">
+        <div class="showcase-container">
+          <div class="showcase-intro">
+            <p class="showcase-label">03 / Tipografía</p>
+            <h2 class="font-display-title">Tipografía de fonts.css</h2>
+          </div>
+
+          <div class="showcase-grid showcase-grid--2">
+            <section class="showcase-panel">
+              <div class="font-note-base color-secondary">SPACE GROTESK</div>
+
+              <div class="stack stack--m">
+                <div class="font-display-cover">56 / 700</div>
+                <div class="font-display-title">36 / 700</div>
+                <div class="font-display-section">24 / 700</div>
+              </div>
+            </section>
+
+            <section class="showcase-panel">
+              <div class="font-note-base color-secondary">INTER</div>
+
+              <div class="stack stack--m">
+                <div class="font-text-large">
+                  Texto grande — 18 / 400 / 155%
+                </div>
+                <div class="font-text-base">Texto base — 15 / 400 / 155%</div>
+                <div class="font-label-highlight">Etiqueta — 13 / 600</div>
+                <div class="font-note-base">Nota — 12 / 400</div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-section" id="formularios">
+        <div class="showcase-container">
+          <div class="showcase-intro">
+            <p class="showcase-label">04 / Formularios</p>
+            <h2 class="font-display-title">Campos e interacción</h2>
+          </div>
+
+          <section class="card">
+            <div class="card__content">
+              <div class="showcase-form-grid">
+                <label class="field">
+                  <span class="field__label">Buscar en la ludoteca</span>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Nombre, editorial o mecánica"
+                  />
+                  <span class="field__message">
+                    Puedes buscar por cualquier término.
+                  </span>
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Género</span>
+                  <select class="input">
+                    <option>Estrategia</option>
+                    <option>Familiar</option>
+                    <option>Cooperativo</option>
+                    <option>Abstracto</option>
+                  </select>
+                  <span class="field__message">Selecciona una categoría.</span>
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Campo con error</span>
+                  <input
+                    class="input"
+                    aria-invalid="true"
+                    value="Terraforming Mars"
+                  />
+                  <span class="field__message field__message--error">
+                    Revisa este campo antes de continuar.
+                  </span>
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Enlace de invitación</span>
+                  <input class="input" type="url" placeholder="https://..." />
+                  <span class="field__message">
+                    Comparte este enlace con tu grupo.
+                  </span>
+                </label>
+
+                <label class="field showcase-form-grid__wide">
+                  <span class="field__label">Notas</span>
+                  <textarea
+                    class="input showcase-textarea"
+                    placeholder="Añade notas sobre la partida..."
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="showcase-form-actions">
+              <button class="btn btn--primary">Guardar</button>
+              <button class="btn btn--outline">Cancelar</button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="showcase-section" id="tarjetas">
+        <div class="showcase-container">
+          <div class="showcase-intro">
+            <p class="showcase-label">05 / Tarjetas</p>
+            <h2 class="font-display-title">Contenido</h2>
+          </div>
+
+          <div class="showcase-grid showcase-grid--3">
+            <article class="card">
+              <div class="showcase-game-card__cover">ARCS</div>
+
+              <div class="showcase-game-card__body">
+                <div class="card__header">
+                  <div>
+                    <h3 class="font-display-section">Arcs</h3>
+                    <div class="font-note-base text-muted">
+                      Estrategia · 2024
+                    </div>
+                  </div>
+                  <span class="badge badge--success">8,7</span>
+                </div>
+
+                <p class="font-text-base">
+                  Lidera una facción y convierte cada baza en una oportunidad.
+                </p>
+
+                <div class="showcase-chips">
+                  <span class="chip">Bazas</span>
+                  <span class="chip">Control de áreas</span>
+                </div>
+              </div>
+
+              <div class="showcase-game-card__footer">
+                <button class="btn btn--primary">Ver juego</button>
+                <button class="btn btn--outline">Comparar</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="showcase-game-card__cover">WINGSPAN</div>
+
+              <div class="showcase-game-card__body">
+                <div class="card__header">
+                  <div>
+                    <h3 class="font-display-section">Wingspan</h3>
+                    <div class="font-note-base text-muted">
+                      Estrategia · 2019
+                    </div>
+                  </div>
+                  <span class="badge badge--info">8,1</span>
+                </div>
+
+                <p class="font-text-base">
+                  Combina habilidades para crear un ecosistema que crece.
+                </p>
+
+                <div class="showcase-chips">
+                  <span class="chip">Motores</span>
+                  <span class="chip">Cartas</span>
+                </div>
+              </div>
+
+              <div class="showcase-game-card__footer">
+                <button class="btn btn--primary">Ver juego</button>
+                <button class="btn btn--outline">Comparar</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="showcase-game-card__cover">AZUL</div>
+
+              <div class="showcase-game-card__body">
+                <div class="card__header">
+                  <div>
+                    <h3 class="font-display-section">Azul</h3>
+                    <div class="font-note-base text-muted">
+                      Abstracto · 2017
+                    </div>
+                  </div>
+                  <span class="badge badge--warning">7,8</span>
+                </div>
+
+                <p class="font-text-base">
+                  Elige azulejos y compón el mejor mosaico.
+                </p>
+
+                <div class="showcase-chips">
+                  <span class="chip">Losetas</span>
+                  <span class="chip">Patrones</span>
+                </div>
+              </div>
+
+              <div class="showcase-game-card__footer">
+                <button class="btn btn--primary">Ver juego</button>
+                <button class="btn btn--outline">Comparar</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-section">
+        <div class="showcase-container">
+          <div class="showcase-intro">
+            <p class="showcase-label">06 / Geometría</p>
+            <h2 class="font-display-title">Espaciado y radios</h2>
+          </div>
+
+          <section class="showcase-panel">
+            <h3 class="font-display-section showcase-panel__title">
+              Retícula de 4 px
+            </h3>
+
+            <div class="showcase-spacing">
+              <div class="showcase-spacing__item">
+                <div
+                  class="showcase-spacing__bar showcase-spacing__bar--4"
+                ></div>
+                <strong>XXS</strong>
+                <span class="font-note-base text-muted">4 px</span>
+              </div>
+
+              <div class="showcase-spacing__item">
+                <div
+                  class="showcase-spacing__bar showcase-spacing__bar--8"
+                ></div>
+                <strong>XS</strong>
+                <span class="font-note-base text-muted">8 px</span>
+              </div>
+
+              <div class="showcase-spacing__item">
+                <div
+                  class="showcase-spacing__bar showcase-spacing__bar--12"
+                ></div>
+                <strong>S</strong>
+                <span class="font-note-base text-muted">12 px</span>
+              </div>
+
+              <div class="showcase-spacing__item">
+                <div
+                  class="showcase-spacing__bar showcase-spacing__bar--16"
+                ></div>
+                <strong>M</strong>
+                <span class="font-note-base text-muted">16 px</span>
+              </div>
+
+              <div class="showcase-spacing__item">
+                <div
+                  class="showcase-spacing__bar showcase-spacing__bar--24"
+                ></div>
+                <strong>L</strong>
+                <span class="font-note-base text-muted">24 px</span>
+              </div>
+
+              <div class="showcase-spacing__item">
+                <div
+                  class="showcase-spacing__bar showcase-spacing__bar--32"
+                ></div>
+                <strong>XL</strong>
+                <span class="font-note-base text-muted">32 px</span>
+              </div>
+
+              <div class="showcase-spacing__item">
+                <div
+                  class="showcase-spacing__bar showcase-spacing__bar--48"
+                ></div>
+                <strong>2XL</strong>
+                <span class="font-note-base text-muted">48 px</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="showcase-panel">
+            <h3 class="font-display-section showcase-panel__title">Radios</h3>
+
+            <div class="showcase-radius">
+              <div class="showcase-radius__item radius-xs">6 px</div>
+              <div class="showcase-radius__item radius-s">10 px</div>
+              <div class="showcase-radius__item radius-m">16 px</div>
+              <div class="showcase-radius__item radius-l">24 px</div>
+              <div class="showcase-radius__item radius-pill">999 px</div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="showcase-section" id="estados">
+        <div class="showcase-container">
+          <div class="showcase-intro">
+            <p class="showcase-label">07 / Estados</p>
+            <h2 class="font-display-title">Feedback</h2>
+          </div>
+
+          <div class="showcase-grid showcase-grid--2">
+            <div class="showcase-alert showcase-alert--info">
+              <strong>Información</strong>
+              <div class="font-note-base text-muted">Datos útiles.</div>
+            </div>
+
+            <div class="showcase-alert showcase-alert--success">
+              <strong>Éxito</strong>
+              <div class="font-note-base text-muted">Acción completada.</div>
+            </div>
+
+            <div class="showcase-alert showcase-alert--warning">
+              <strong>Aviso</strong>
+              <div class="font-note-base text-muted">Requiere atención.</div>
+            </div>
+
+            <div class="showcase-alert showcase-alert--danger">
+              <strong>Error</strong>
+              <div class="font-note-base text-muted">Acción bloqueada.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-section">
+        <div class="showcase-container">
+          <div class="showcase-intro">
+            <p class="showcase-label">08 / Datos</p>
+            <h2 class="font-display-title">Tabla y estado vacío</h2>
+          </div>
+
+          <div class="showcase-table-wrap">
+            <table class="showcase-table">
+              <thead>
+                <tr>
+                  <th>Juego</th>
+                  <th>Jugadores</th>
+                  <th>Duración</th>
+                  <th>Complejidad</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><strong>Arcs</strong></td>
+                  <td>2–4</td>
+                  <td>60–120 min</td>
+                  <td>3,1 / 5</td>
+                  <td><span class="badge badge--success">Guardado</span></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Wingspan</strong></td>
+                  <td>1–5</td>
+                  <td>40–70 min</td>
+                  <td>2,5 / 5</td>
+                  <td><span class="badge badge--info">Nuevo</span></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Azul</strong></td>
+                  <td>2–4</td>
+                  <td>30–45 min</td>
+                  <td>1,8 / 5</td>
+                  <td><span class="badge badge--warning">Pendiente</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="showcase-empty">
+            <div class="stack stack--m">
+              <h3 class="font-display-section">Aún no hay nadie en la mesa</h3>
+              <p class="font-text-base text-muted">
+                Comparte el enlace y prepara contadores, notas y turnos.
+              </p>
+              <div>
+                <button class="btn btn--primary">Invitar jugadores</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="showcase-footer">
+      <div class="showcase-container cluster">
+        <span class="showcase-brand">Table Top Companion</span>
+        <span class="font-note-base text-muted">CSS Showcase</span>
+      </div>
+    </footer>
+
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("theme-daylight");
+        document.body.classList.toggle("theme-after-game");
+      });
+
+      document.querySelectorAll("#chips .chip").forEach((chip) => {
+        chip.addEventListener("click", () => {
+          document.querySelectorAll("#chips .chip").forEach((item) => {
+            item.classList.remove("chip--active");
+          });
+
+          chip.classList.add("chip--active");
+        });
+      });
+
+      document.querySelectorAll("#tabs .tab").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll("#tabs .tab").forEach((item) => {
+            item.classList.remove("is-active");
+          });
+
+          tab.classList.add("is-active");
+        });
+      });
+    </script>
+  </body>
+</html>
