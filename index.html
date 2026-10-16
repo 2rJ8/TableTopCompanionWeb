@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/landing.css" />
   </head>
   <body class="theme-daylight">
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Table Top Companion, inicio">
@@ -25,8 +26,16 @@
 
         <nav class="main-nav" aria-label="Navegación principal">
           <div class="nav-dropdown">
-            <button class="nav-trigger" type="button">Explorar</button>
-            <div class="dropdown-menu">
+            <button
+              class="nav-trigger"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="explorar-menu"
+            >
+              Explorar
+            </button>
+            <div class="dropdown-menu" id="explorar-menu">
               <a href="HTML/juegos.html">Juegos</a>
               <a href="#colecciones">Colecciones</a>
               <a href="#recomendados">Recomendados</a>
@@ -35,8 +44,16 @@
           </div>
 
           <div class="nav-dropdown">
-            <button class="nav-trigger" type="button">Partidas</button>
-            <div class="dropdown-menu">
+            <button
+              class="nav-trigger"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="partidas-menu"
+            >
+              Partidas
+            </button>
+            <div class="dropdown-menu" id="partidas-menu">
               <a href="#mis-partidas">Mis partidas</a>
               <a href="#crear-partida">Crear partida</a>
               <a href="#historial">Historial</a>
@@ -44,8 +61,16 @@
           </div>
 
           <div class="nav-dropdown">
-            <button class="nav-trigger" type="button">Comunidad</button>
-            <div class="dropdown-menu">
+            <button
+              class="nav-trigger"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="comunidad-menu"
+            >
+              Comunidad
+            </button>
+            <div class="dropdown-menu" id="comunidad-menu">
               <a href="#grupos">Grupos</a>
               <a href="#eventos">Eventos</a>
               <a href="#foro">Foro</a>
@@ -73,7 +98,7 @@
       </div>
     </header>
 
-    <main class="hero">
+    <main class="hero" id="main-content">
       <div class="container hero-grid">
         <section class="hero-content" aria-labelledby="hero-title">
           <span class="eyebrow hero-eyebrow">Juego de la semana</span>
@@ -108,7 +133,7 @@
               src="resources/images/generic-board-game.svg"
               alt="Ilustración de un tablero de juego con fichas, cartas y dados"
             />
-            <div class="game-score" aria-label="Puntuación de la comunidad: 8,7">
+            <div class="game-score" role="img" aria-label="Puntuación de la comunidad: 8,7 sobre 10">
               <strong>8,7</strong>
               <span>Comunidad</span>
             </div>
@@ -153,13 +178,13 @@
                 <strong>Nora M.</strong>
                 <span>reseña de la semana</span>
               </div>
-              <span class="news-score">9,3</span>
+              <span class="news-score" aria-label="Valoración: 9,3 sobre 10">9,3</span>
             </div>
             <blockquote>
               “Sky Team hace que cada silencio importe. Nunca había vivido
               tanta tensión con solo doce dados.”
             </blockquote>
-            <div class="news-rating" aria-label="5 estrellas de 5">
+            <div class="news-rating" role="img" aria-label="Valoración: 5 de 5 estrellas">
               <span aria-hidden="true">★★★★★</span>
               <small>Experiencia cooperativa</small>
             </div>
@@ -172,9 +197,9 @@
 
           <article class="news-card">
             <div class="news-image news-image-heat">
-              <img src="resources/images/generic-board-game.svg" alt="Partida de Heat en un circuito" />
+              <img src="resources/images/generic-board-game.svg" alt="Ilustración genérica de un juego de mesa; no muestra una partida real de Heat" />
               <span class="news-tag">Más jugado</span>
-              <span class="news-image-icon"><i data-lucide="flag" class="icon--sm" aria-hidden="true"></i></span>
+              <span class="news-image-icon" aria-hidden="true"><i data-lucide="flag" class="icon--sm"></i></span>
             </div>
             <div class="news-card-content">
               <div class="news-card-meta"><span>Heat</span><span>hace 2 h</span></div>
@@ -182,16 +207,16 @@
               <div class="news-card-footer">
                 <span><i data-lucide="message-circle" class="icon--sm" aria-hidden="true"></i> 28</span>
                 <span><i data-lucide="heart" class="icon--sm" aria-hidden="true"></i> 47</span>
-                <a href="#leer-heat">Leer más</a>
+                <a href="#leer-heat" aria-label="Leer más sobre Heat">Leer más</a>
               </div>
             </div>
           </article>
 
           <article class="news-card">
             <div class="news-image news-image-castle">
-              <img src="resources/images/generic-board-game.svg" alt="Partida de The White Castle" />
+              <img src="resources/images/generic-board-game.svg" alt="Ilustración genérica de un juego de mesa; no muestra una partida real de The White Castle" />
               <span class="news-tag">Recomendado</span>
-              <span class="news-image-icon"><i data-lucide="sparkles" class="icon--sm" aria-hidden="true"></i></span>
+              <span class="news-image-icon" aria-hidden="true"><i data-lucide="sparkles" class="icon--sm"></i></span>
             </div>
             <div class="news-card-content">
               <div class="news-card-meta"><span>The White Castle</span><span>hace 5 h</span></div>
@@ -199,7 +224,7 @@
               <div class="news-card-footer">
                 <span><i data-lucide="message-circle" class="icon--sm" aria-hidden="true"></i> 19</span>
                 <span><i data-lucide="heart" class="icon--sm" aria-hidden="true"></i> 31</span>
-                <a href="#leer-castle">Leer más</a>
+                <a href="#leer-castle" aria-label="Leer más sobre The White Castle">Leer más</a>
               </div>
             </div>
           </article>
@@ -226,7 +251,7 @@
 
         <div class="collections-grid">
           <article class="collection-card">
-            <div class="collection-collage" aria-label="Juegos compactos de estrategia">
+            <div class="collection-collage" role="img" aria-label="Collage decorativo de juegos compactos de estrategia">
               <img src="resources/images/generic-board-game.svg" alt="" />
               <img src="resources/images/generic-board-game.svg" alt="" />
               <img src="resources/images/generic-board-game.svg" alt="" />
@@ -241,7 +266,7 @@
           </article>
 
           <article class="collection-card">
-            <div class="collection-collage" aria-label="Juegos cooperativos para dos personas">
+            <div class="collection-collage" role="img" aria-label="Collage decorativo de juegos cooperativos para dos personas">
               <img src="resources/images/generic-board-game.svg" alt="" />
               <img src="resources/images/generic-board-game.svg" alt="" />
               <img src="resources/images/generic-board-game.svg" alt="" />
@@ -256,7 +281,7 @@
           </article>
 
           <article class="collection-card">
-            <div class="collection-collage" aria-label="Juegos de estrategia de Europa">
+            <div class="collection-collage" role="img" aria-label="Collage decorativo de juegos de estrategia de Europa">
               <img src="resources/images/generic-board-game.svg" alt="" />
               <img src="resources/images/generic-board-game.svg" alt="" />
               <img src="resources/images/generic-board-game.svg" alt="" />
@@ -321,6 +346,11 @@
       </div>
     </footer>
 
+    <style>
+      .skip-link { position: absolute; top: -5rem; left: 1rem; z-index: 1000; padding: .75rem 1rem; background: #fff; color: #111; border: 2px solid currentColor; }
+      .skip-link:focus { top: 1rem; }
+      :focus-visible { outline: 3px solid #1769aa; outline-offset: 3px; }
+    </style>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="JS/icons.js"></script>
     <script src="JS/theme.js"></script>
