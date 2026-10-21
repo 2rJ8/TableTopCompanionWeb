@@ -5,12 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Table Top Companion: organiza tus partidas y descubre nuevos juegos."
+      content="Descubre juegos de mesa, consulta reseñas y colecciones de la comunidad, y organiza tus próximas partidas con Table Top Companion."
     />
-    <title>Table Top Companion</title>
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <title>Juegos de mesa, reseñas y partidas | Table Top Companion</title>
+
+    <!-- Metadatos para compartir la página en redes sociales. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Table Top Companion" />
+    <meta
+      property="og:title"
+      content="Juegos de mesa, reseñas y partidas | Table Top Companion"
+    />
+    <meta
+      property="og:description"
+      content="Descubre juegos de mesa, consulta reseñas y colecciones de la comunidad, y organiza tus próximas partidas."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Juegos de mesa, reseñas y partidas | Table Top Companion"
+    />
+    <meta
+      name="twitter:description"
+      content="Descubre juegos de mesa, consulta reseñas y colecciones de la comunidad, y organiza tus próximas partidas."
+    />
+
     <link rel="stylesheet" href="CSS/landing.css" />
   </head>
   <body class="theme-daylight">
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <header class="site-header">
       <div class="container header-inner">
         <a
@@ -21,7 +47,7 @@
           <img
             class="brand-logo"
             src="resources/images/App_Icon.svg"
-            alt=""
+            alt="Icono de la aplicación Table Top Companion"
             aria-hidden="true"
           />
           <span class="brand-name">Table Top Companion</span>
@@ -97,6 +123,7 @@
             aria-label="Configuración"
           >
             <i data-lucide="settings" class="icon--md" aria-hidden="true"></i>
+            <span class="visually-hidden">Configuración</span>
           </a>
           <button
             class="header-icon-button user-button"
@@ -109,7 +136,7 @@
       </div>
     </header>
 
-    <main class="hero">
+    <main class="hero" id="main-content">
       <div class="container hero-grid">
         <section class="hero-content" aria-labelledby="hero-title">
           <span class="eyebrow hero-eyebrow">Juego de la semana</span>
@@ -147,10 +174,12 @@
             <img
               src="resources/images/generic-board-game.svg"
               alt="Ilustración de un tablero de juego con fichas, cartas y dados"
+              decoding="async"
             />
             <div
               class="game-score"
-              aria-label="Puntuación de la comunidad: 8,7"
+              role="img"
+              aria-label="Puntuación de la comunidad: 8,7 sobre 10"
             >
               <strong>8,7</strong>
               <span>Comunidad</span>
@@ -202,13 +231,19 @@
                 <strong>Nora M.</strong>
                 <span>reseña de la semana</span>
               </div>
-              <span class="news-score">9,3</span>
+              <span class="news-score" aria-label="Valoración: 9,3 sobre 10"
+                >9,3</span
+              >
             </div>
             <blockquote>
               “Sky Team hace que cada silencio importe. Nunca había vivido tanta
               tensión con solo doce dados.”
             </blockquote>
-            <div class="news-rating" aria-label="5 estrellas de 5">
+            <div
+              class="news-rating"
+              role="img"
+              aria-label="Valoración: 5 de 5 estrellas"
+            >
               <span aria-hidden="true">★★★★★</span>
               <small>Experiencia cooperativa</small>
             </div>
@@ -233,7 +268,9 @@
             <div class="news-image news-image-heat">
               <img
                 src="resources/images/generic-board-game.svg"
-                alt="Partida de Heat en un circuito"
+                alt="Ilustración genérica de un juego de mesa; no muestra una partida real de Heat"
+                loading="lazy"
+                decoding="async"
               />
               <span class="news-tag">Más jugado</span>
               <span class="news-image-icon" aria-hidden="true"
@@ -273,7 +310,9 @@
             <div class="news-image news-image-castle">
               <img
                 src="resources/images/generic-board-game.svg"
-                alt="Partida de The White Castle"
+                alt="Ilustración genérica de un juego de mesa; no muestra una partida real de The White Castle"
+                loading="lazy"
+                decoding="async"
               />
               <span class="news-tag">Recomendado</span>
               <span class="news-image-icon" aria-hidden="true"
@@ -348,11 +387,27 @@
           <article class="collection-card">
             <div
               class="collection-collage"
-              aria-label="Juegos compactos de estrategia"
+              role="img"
+              aria-label="Collage decorativo de juegos compactos de estrategia"
             >
-              <img src="resources/images/generic-board-game.svg" alt="" />
-              <img src="resources/images/generic-board-game.svg" alt="" />
-              <img src="resources/images/generic-board-game.svg" alt="" />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="collection-card-content">
               <h3>Pequeñas cajas, grandes decisiones</h3>
@@ -368,11 +423,27 @@
           <article class="collection-card">
             <div
               class="collection-collage"
-              aria-label="Juegos cooperativos para dos personas"
+              role="img"
+              aria-label="Collage decorativo de juegos cooperativos para dos personas"
             >
-              <img src="resources/images/generic-board-game.svg" alt="" />
-              <img src="resources/images/generic-board-game.svg" alt="" />
-              <img src="resources/images/generic-board-game.svg" alt="" />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="collection-card-content">
               <h3>Cooperativos para dos</h3>
@@ -388,11 +459,27 @@
           <article class="collection-card">
             <div
               class="collection-collage"
-              aria-label="Juegos de estrategia de Europa"
+              role="img"
+              aria-label="Collage decorativo de juegos de estrategia de Europa"
             >
-              <img src="resources/images/generic-board-game.svg" alt="" />
-              <img src="resources/images/generic-board-game.svg" alt="" />
-              <img src="resources/images/generic-board-game.svg" alt="" />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="resources/images/generic-board-game.svg"
+                alt="Ilustración genérica de un juego de mesa"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="collection-card-content">
               <h3>Europa en 90 minutos</h3>
@@ -419,8 +506,10 @@
             <img
               class="brand-logo"
               src="resources/images/App_Icon.svg"
-              alt=""
+              alt="Icono de la aplicación Table Top Companion"
               aria-hidden="true"
+              loading="lazy"
+              decoding="async"
             />
             <span class="brand-name">Table Top Companion</span>
           </a>
@@ -432,19 +521,19 @@
 
         <nav class="footer-links" aria-label="Enlaces del pie de página">
           <div>
-            <h2>Descubre</h2>
+            <h3>Descubre</h3>
             <a href="HTML/juegos.html">Juegos</a>
             <a href="#colecciones">Colecciones</a>
             <a href="#noticias">Noticias</a>
           </div>
           <div>
-            <h2>Comunidad</h2>
+            <h3>Comunidad</h3>
             <a href="#grupos">Grupos</a>
             <a href="#eventos">Eventos</a>
             <a href="#foro">Foro</a>
           </div>
           <div>
-            <h2>Ayuda</h2>
+            <h3>Ayuda</h3>
             <a href="mailto:hola@tabletopcompanion.example">Contáctanos</a>
             <a href="#preguntas">Preguntas frecuentes</a>
             <a href="#privacidad">Privacidad</a>
@@ -463,8 +552,38 @@
       </div>
     </footer>
 
+    <style>
+      .skip-link {
+        position: absolute;
+        top: -5rem;
+        left: 1rem;
+        z-index: 1000;
+        padding: 0.75rem 1rem;
+        background: #fff;
+        color: #111;
+        border: 2px solid currentColor;
+      }
+      .skip-link:focus {
+        top: 1rem;
+      }
+
+      /* Indicador de foco AAA (alto contraste y grosor superior a 2px) */
+      :focus-visible {
+        outline: 3px solid var(--color-primary, #00d8ff);
+        outline-offset: 3px;
+      }
+
+      /* Estilo corregido para los títulos h3 del footer */
+      .footer-links h3 {
+        margin: 0 0 5px;
+        color: var(--color-text);
+        font-family: var(--font-interface);
+        font-size: 12px;
+        font-weight: 700;
+      }
+    </style>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="js/icons.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="JS/icons.js"></script>
+    <script src="JS/theme.js"></script>
   </body>
 </html>
