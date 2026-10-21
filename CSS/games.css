@@ -19,7 +19,9 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   font-family: var(--font-interface);
-  transition: background-color 200ms ease, color 200ms ease;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
 }
 
 a {
@@ -262,7 +264,9 @@ a {
   border-radius: 12px;
   background: var(--color-surface);
   box-shadow: 0 8px 20px rgba(16, 33, 38, 0.05);
-  transition: transform 150ms ease, box-shadow 150ms ease;
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
 }
 
 .catalog-card:hover {

@@ -48,13 +48,13 @@ Los nombres disponibles se encuentran en
 
 `icons.css` define tamaños reutilizables:
 
-| Clase | Tamaño |
-| --- | ---: |
-| `.icon--xs` | 14 px |
-| `.icon--sm` | 16 px |
-| `.icon--md` | 20 px |
-| `.icon--lg` | 24 px |
-| `.icon--xl` | 32 px |
+| Clase       | Tamaño |
+| ----------- | -----: |
+| `.icon--xs` |  14 px |
+| `.icon--sm` |  16 px |
+| `.icon--md` |  20 px |
+| `.icon--lg` |  24 px |
+| `.icon--xl` |  32 px |
 
 Sin una clase de tamaño, el icono utiliza `1em` y se adapta al tamaño de
 fuente del elemento que lo contiene. El color se hereda automáticamente de
@@ -66,7 +66,11 @@ Los iconos decorativos deben incluir `aria-hidden="true"`. Si un icono es la
 única información de un botón, el botón debe tener un nombre accesible:
 
 ```html
-<a class="header-icon-button" href="HTML/iconos.html" aria-label="Configuración">
+<a
+  class="header-icon-button"
+  href="HTML/iconos.html"
+  aria-label="Configuración"
+>
   <i data-lucide="settings" class="icon--md" aria-hidden="true"></i>
 </a>
 ```
