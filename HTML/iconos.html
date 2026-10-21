@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../CSS/icons-gallery.css" />
   </head>
   <body class="theme-daylight">
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <header class="icons-page-header">
       <div class="icons-page-header__inner">
         <a class="icons-page-brand" href="../index.html" aria-label="Volver al inicio">
@@ -24,7 +25,7 @@
       </div>
     </header>
 
-    <main class="icons-page-main">
+    <main class="icons-page-main" id="main-content">
       <header class="icons-page-intro">
         <p class="icons-page-label">Biblioteca visual</p>
         <h1 class="font-display-title">Iconos comunes</h1>
@@ -148,6 +149,11 @@
       </section>
     </main>
 
+    <style>
+      .skip-link { position: absolute; top: -5rem; left: 1rem; z-index: 1000; padding: .75rem 1rem; background: #fff; color: #111; border: 2px solid currentColor; }
+      .skip-link:focus { top: 1rem; }
+      :focus-visible { outline: 3px solid #00d8ff; outline-offset: 3px; }
+    </style>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="../JS/icons.js"></script>
   </body>

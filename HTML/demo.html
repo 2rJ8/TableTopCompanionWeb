@@ -9,6 +9,7 @@
   </head>
 
   <body class="theme-daylight">
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <header class="showcase-header">
       <div class="showcase-container">
         <div class="showcase-nav">
@@ -34,7 +35,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="showcase-section">
         <div class="showcase-container showcase-hero">
           <div class="showcase-hero__copy">
@@ -557,6 +558,11 @@
       </div>
     </footer>
 
+    <style>
+      .skip-link { position: absolute; top: -5rem; left: 1rem; z-index: 1000; padding: .75rem 1rem; background: #fff; color: #111; border: 2px solid currentColor; }
+      .skip-link:focus { top: 1rem; }
+      :focus-visible { outline: 3px solid #00d8ff; outline-offset: 3px; }
+    </style>
     <script>
       const themeToggle = document.getElementById("themeToggle");
 
